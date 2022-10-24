@@ -1,0 +1,72 @@
+AZ-040:
+
+Module 1: Getting started with Windows PowerShell
+Module 2: Windows PowerShell for local systems administration
+Module 3: Working with the Windows PowerShell pipeline
+Module 4: Using PSProviders and PSDrives
+Module 5: Querying management information by using CIM and WMI
+Module 6: Working with variables, arrays, and hash tables
+Module 7: Windows PowerShell scripting
+Module 8: Administering remote computers with Windows PowerShell
+Module 9: Managing Azure resources with PowerShell
+Module 10: Managing Microsoft 365 services with PowerShell
+Module 11: Using background jobs and scheduled jobs
+
+https://learn.microsoft.com/en-us/training/browse/?resource_type=learning%20path&terms=Powershell
+
+My Collection:
+https://learn.microsoft.com/en-us/users/lucdorpmans-5930/collections/8xzdb3xez2p6yn
+https://tinyurl.com/LucsAZ-040
+
+
+Module 1: Getting started with Windows PowerShell
+https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/
+
+Module 2: Windows PowerShell for local systems administration
+https://learn.microsoft.com/en-us/training/paths/maintain-system-administration-tasks-windows-powershell/
+
+Module 3: Working with the Windows PowerShell pipeline
+https://learn.microsoft.com/en-us/training/paths/work-windows-powershell-pipeline/
+Extra: https://learn.microsoft.com/en-us/training/modules/understand-windows-powershell-pipeline/
+
+Module 4: Using PSProviders and PSDrives
+https://learn.microsoft.com/en-us/training/paths/work-powershell-providers-powershell-drives-windows-powershell/
+
+Module 5: Querying management information by using CIM and WMI
+5: https://learn.microsoft.com/en-us/training/modules/query-configuration-information/
+
+Module 6: Working with variables, arrays, and hash tables
+https://learn.microsoft.com/en-us/training/paths/use-variables-arrays-hash-tables-windows-powershell/
+
+Module 7: Windows PowerShell scripting
+https://learn.microsoft.com/en-us/training/paths/create-modify-script-use-windows-powershell/
+
+Module 8: Administering remote computers with Windows PowerShell
+https://learn.microsoft.com/en-us/training/paths/administer-remote-computers-use-windows-powershell/
+
+Module 9: Managing Azure resources with PowerShell
+https://learn.microsoft.com/en-us/training/paths/manage-cloud-resources-use-windows-powershell/
+
+Module 10: Managing Microsoft 365 services with PowerShell
+https://learn.microsoft.com/en-us/training/paths/manage-microsoft-365-services-use-windows-powershell/
+
+Module 11: Using background jobs and scheduled jobs
+https://learn.microsoft.com/en-us/training/paths/create-manage-background-jobs-scheduled-windows-powershell/
+
+
+
+My Collection:
+https://learn.microsoft.com/en-us/users/lucdorpmans-5930/collections/8xzdb3xez2p6yn
+1: https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/
+2: https://learn.microsoft.com/en-us/training/paths/maintain-system-administration-tasks-windows-powershell/
+3: https://learn.microsoft.com/en-us/training/paths/work-windows-powershell-pipeline/
+3+:Extra: https://learn.microsoft.com/en-us/training/modules/understand-windows-powershell-pipeline/
+4: https://learn.microsoft.com/en-us/training/paths/work-powershell-providers-powershell-drives-windows-powershell/
+5: https://learn.microsoft.com/en-us/training/modules/query-configuration-information/
+6: https://learn.microsoft.com/en-us/training/paths/use-variables-arrays-hash-tables-windows-powershell/
+7:https://learn.microsoft.com/en-us/training/paths/create-modify-script-use-windows-powershell/
+8: https://learn.microsoft.com/en-us/training/paths/administer-remote-computers-use-windows-powershell/
+9: https://learn.microsoft.com/en-us/training/paths/manage-cloud-resources-use-windows-powershell/
+10: https://learn.microsoft.com/en-us/training/paths/manage-microsoft-365-services-use-windows-powershell/
+11: https://learn.microsoft.com/en-us/training/paths/create-manage-background-jobs-scheduled-windows-powershell/
+

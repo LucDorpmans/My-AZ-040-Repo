@@ -5,8 +5,8 @@ Function Get-MyScript { Param( [string]$AScript,[switch]$EditFile = $False,
 If ($EditFile) { PSEdit ("$SPath$AScript" )} }
 
 Get-MyScript "PowerShell-Core-7-Download+Install.ps1" -EditFile
-Get-MyScript "Chrome-Download+Run-Installer.ps1"
+Get-MyScript "Edge-HideFirstRunExperience.ps1" -EditFile
 
-# Get Install-VSCode script"
+# Get the Install-VSCode script"
 Invoke-Webrequest -Uri "https://raw.githubusercontent.com/PowerShell/vscode-powershell/master/scripts/Install-VSCode.ps1" -Outfile "$env:USERPROFILE\Downloads\Install-VSCode.ps1"
 PSEdit  ("$env:USERPROFILE\Downloads\Install-VSCode.ps1")

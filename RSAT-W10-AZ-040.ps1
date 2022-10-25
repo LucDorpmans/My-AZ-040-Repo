@@ -1,4 +1,5 @@
-﻿Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State | Sort-Object -Property Name | Select Name | Out-File C:\Temp\RSAT-List.txt
+﻿# RSAT Win10 Selection
+Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State | Sort-Object -Property Name | Select Name | Out-File C:\Temp\RSAT-List.txt
 PSEdit C:\Temp\RSAT-List.txt
 
 Get-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools* -Online | Add-WindowsCapability -Online

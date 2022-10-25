@@ -1,5 +1,5 @@
 ﻿# RSAT Win10 Selection
-Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State | Sort-Object -Property Name | Select Name | Out-File C:\Temp\RSAT-List.txt
+Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State | Sort-Object -Property Name | Select-Object Name | Out-File C:\Temp\RSAT-List.txt
 PSEdit C:\Temp\RSAT-List.txt
 
 Get-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools* -Online | Add-WindowsCapability -Online
@@ -9,7 +9,7 @@ Get-WindowsCapability -Name Rsat.FileServices.Tools~~~~0.0.1.0 -Online | Add-Win
 Get-WindowsCapability -Name Rsat.GroupPolicy.Management.Tools~~~~0.0.1.0  -Online | Add-WindowsCapability -Online
 Get-WindowsCapability -Name Rsat.ServerManager.Tools~~~~0.0.1.0  -Online | Add-WindowsCapability -Online
 Get-WindowsCapability -Name * -Online | Add-WindowsCapability -Online
-# Get-WindowsCapability -Name "RSAT*" -Online | Add-WindowsCapability –Online
+# Get-WindowsCapability -Name "RSAT*" -Online | Add-WindowsCapability -Online
 
 <# 
 Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0 

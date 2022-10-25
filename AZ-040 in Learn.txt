@@ -12,6 +12,8 @@ Module 9: Managing Azure resources with PowerShell
 Module 10: Managing Microsoft 365 services with PowerShell
 Module 11: Using background jobs and scheduled jobs
 
+https://learn.microsoft.com/en-us/training/courses/az-040t00?WT.mc_id=ilt_partner_webpage_wwl
+
 https://learn.microsoft.com/en-us/training/browse/?resource_type=learning%20path&terms=Powershell
 
 My Collection:

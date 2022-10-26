@@ -10,7 +10,7 @@ Get-MyScript "WinX-CmdNotPowerShell.ps1" -EditFile
 Get-MyScript "AddRSATToolsList-Win1x.ps1" -EditFile
 Get-MyScript "GitHub-Desktop-Download+SilentInstall.ps1" -EditFile
 
-WinGet install Microsoft.VisualStudioCode
+# WinGet install Microsoft.VisualStudioCode
 # Get the Install-VSCode script"
 # Invoke-Webrequest -Uri "https://raw.githubusercontent.com/PowerShell/vscode-powershell/master/scripts/Install-VSCode.ps1" -Outfile "$env:USERPROFILE\Downloads\Install-VSCode.ps1"
 # PSEdit  ("$env:USERPROFILE\Downloads\Install-VSCode.ps1")

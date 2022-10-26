@@ -6,4 +6,4 @@ $MyRepo = "My-AZ-040-Repo"
 $MyScript = "GetMy-AZ-040-Scripts.ps1"
 Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/$MyRepo/main/$MyScript"  -Outfile "$env:USERPROFILE\Downloads\$MyScript"
 PSEdit  ("$env:USERPROFILE\Downloads\$MyScript")
-
+Set-ExecutionPolicy Unrestricted -Force

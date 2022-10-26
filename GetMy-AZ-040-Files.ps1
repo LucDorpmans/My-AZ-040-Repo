@@ -4,12 +4,12 @@ Function Get-MyScript { Param( [string]$AFile,[switch]$EditFile = $False,
 			Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/My-AZ-040-Repo/main/$AFile"  -Outfile "$SPath$AFile" 
 			If ($EditFile) { PSEdit ("$SPath$AFile" )} }
 
-
-Get-MyScript "Chrome-Download+Run-Installer.ps1" -EditFile
-Get-MyScript "WAC-Download+Install.ps1" -EditFile
-Get-MyScript "EdgeMSI-Download-Only-Complete.ps1"
-Get-MyScript "Edge-InstallOnly.ps1"
-
+Get-MyScript "PowerShell-Core-7-Download+Install.ps1" -EditFile
+Get-MyScript "Edge-HideFirstRunExperience.ps1" -EditFile
+Get-MyScript  "WinX-CmdNotPowerShell.ps1" -EditFile
+Get-MyScript  "AddRSATToolsList-Win1x.ps1" -EditFile
+Get-MyScript  "GitHub-Desktop-Download+SilentInstall.ps1" -EditFile
+            
 Function DownloadFilesFromRepo {
 # https://gist.github.com/chrisbrownie/f20cb4508975fb7fb5da145d3d38024a
 Param(

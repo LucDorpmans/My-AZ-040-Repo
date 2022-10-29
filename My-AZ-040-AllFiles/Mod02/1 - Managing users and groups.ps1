@@ -1,6 +1,6 @@
 ﻿# Demonstration: Managing users and groups
 
-New-ADGroup -Name HelpDesk -Path "OU=IT,DC=Adatum,DC=com" –GroupScope Global
+New-ADGroup -Name HelpDesk -Path "OU=IT,DC=Adatum,DC=com" -GroupScope Global
 
 New-ADUser -Name "Jane Doe" -Department "IT"
 

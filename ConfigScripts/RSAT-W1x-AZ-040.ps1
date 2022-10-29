@@ -1,6 +1,5 @@
-﻿# RSAT Win10 Selection
+﻿# RSAT Win10 Selection for AZ-040
 Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State | Sort-Object -Property Name | Select-Object Name, State
-
 
 Get-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools* -Online | Add-WindowsCapability -Online
 Get-WindowsCapability -Name Rsat.DHCP.Tools~~~~0.0.1.0 -Online | Add-WindowsCapability -Online

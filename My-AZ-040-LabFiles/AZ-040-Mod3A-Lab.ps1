@@ -53,7 +53,7 @@ Help Get-DHCPServerv4Scope -ShowWindow
 # In the  console:
 Get-DHCPServerv4Scope -ComputerName LON-DC1
 # In the  console:
-Get-DHCPServerv4Scope -ComputerName LON-DC1 | Select-Object -Property ScopeId,SubnetMask,Name | fl
+Get-DHCPServerv4Scope -ComputerName LON-DC1 | Select-Object -Property ScopeId,SubnetMask,Name | Format-List
 
 ###
 # Task 4: Display a sorted list of enabled Windows Firewall rules

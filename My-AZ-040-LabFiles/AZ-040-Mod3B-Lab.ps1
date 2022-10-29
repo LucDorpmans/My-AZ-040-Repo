@@ -11,7 +11,7 @@ Get-ChildItem -Path E: -Recurse
 Get-ChildItem -Path E: -Recurse | Get-Member 
 # Note: Notice the GetFiles method in the list under TypeName: System.IO.DirectoryInfo.
 
-Get-ChildItem -Path E: -Recurse | ForEach GetFiles
+Get-ChildItem -Path E: -Recurse | ForEach-Object GetFiles
 # Task 2: Use enumeration to produce 100 random numbers
 
 help *random* 

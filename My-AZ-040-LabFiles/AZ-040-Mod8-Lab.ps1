@@ -117,7 +117,7 @@ $dc
 Get-Module -ListAvailable -PSSession $dc
 
 # To find a module on AZ-040T00A-LON-DC1 that can work with Server Message Block (SMB) shares:
-Get-Module -ListAvailable -PSSession $dc | Where { $_.Name -Like '*share*' }
+Get-Module -ListAvailable -PSSession $dc | Where-Object { $_.Name -Like '*share*' }
 
 # To import the module from AZ-040T00A-LON-DC1 to your local computer, and to add the prefix DC to the important commands' nouns:
 Import-Module -PSSession $dc -Name SMBShare -Prefix DC
@@ -172,7 +172,7 @@ Help Get-NetFirewallRule -ShowWindow
 # Close the Get-NetFirewallRule Help window.
 
 # To display a list of enabled firewall rules on AZ-040T00A-LON-DC1 and AZ-040T00A-LON-CL1:
-Invoke-Command -Session $computers -ScriptBlock { Get-NetFirewallRule -Enabled True } | Select Name,PSComputerName
+Invoke-Command -Session $computers -ScriptBlock { Get-NetFirewallRule -Enabled True } | Select-Object Name,PSComputerName
 
 # To unload the module on AZ-040T00A-LON-DC1 and AZ-040T00A-LON-CL1:
 Invoke-Command -Session $computers -ScriptBlock { Remove-Module NetSecurity }

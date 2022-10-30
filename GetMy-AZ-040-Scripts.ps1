@@ -11,3 +11,4 @@ Get-MyScript "RSAT-W1x-AZ-040.ps1" -EditFile
 Get-MyScript "GitHub-Desktop-Download+SilentInstall.ps1" -EditFile
 
 # WinGet install Microsoft.VisualStudioCode
+# WinGet install Microsoft.WindowsTerminal

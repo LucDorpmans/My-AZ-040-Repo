@@ -12,3 +12,5 @@ Get-MyScript "GitHub-Desktop-Download+SilentInstall.ps1" -EditFile
 
 # WinGet install Microsoft.VisualStudioCode
 # WinGet install Microsoft.WindowsTerminal
+# WinGet install Microsoft.PowerShell
+

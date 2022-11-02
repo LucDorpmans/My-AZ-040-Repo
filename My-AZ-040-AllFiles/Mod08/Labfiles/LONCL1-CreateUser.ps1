@@ -1,13 +1,13 @@
 ﻿# STEP 1
 # Run this script on LON-CL1
 
-New-ADGroup –Name HelpDesk –GroupScope Global –GroupCategory Security –SamAccountName HelpDesk
+New-ADGroup -Name HelpDesk -GroupScope Global -GroupCategory Security -SamAccountName HelpDesk
 
-New-ADUser –Name HelpDeskTest –samAccountName HelpDeskTest
+New-ADUser -Name HelpDeskTest -samAccountName HelpDeskTest
 
-Set-ADAccountPassword –Identity HelpDeskTest –NewPassword (ConvertTo-SecureString –AsPlainText 'Pa$$w0rd' –force)
+Set-ADAccountPassword -Identity HelpDeskTest -NewPassword (ConvertTo-SecureString -AsPlainText 'Pa$$w0rd' -force)
 
-Add-ADGroupMember –Identity HelpDesk –Members HelpDeskTest
+Add-ADGroupMember -Identity HelpDesk -Members HelpDeskTest
 
 Enable-ADAccount HelpDeskTest
 

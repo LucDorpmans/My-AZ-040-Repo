@@ -8,7 +8,7 @@ $dc
 
 Get-Module -ListAvailable -PSSession $dc
 
-Get-Module -ListAvailable -PSSession $dc | Where { $_.Name -Like '*share*' }
+Get-Module -ListAvailable -PSSession $dc | Where-Object { $_.Name -Like '*share*' }
 
 Import-Module -PSSession $dc -Name SMBShare -Prefix DC
 

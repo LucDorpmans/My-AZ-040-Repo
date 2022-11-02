@@ -13,7 +13,7 @@ Invoke-Command -Session $computers -ScriptBlock { Import-Module NetSecurity }
 
 Get-Command -Module NetSecurity
 
-Invoke-Command -Session $computers -ScriptBlock { Get-NetFirewallRule -Enabled True } | Select Name,PSComputerName
+Invoke-Command -Session $computers -ScriptBlock { Get-NetFirewallRule -Enabled True } | Select-Object Name,PSComputerName
 
 Invoke-Command -Session $computers -ScriptBlock { Remove-Module NetSecurity }
 

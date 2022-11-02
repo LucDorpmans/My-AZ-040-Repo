@@ -7,7 +7,6 @@ If ($EditFile) { PSEdit ("$SPath$AScript" )} }
 Invoke-WebRequest -uri "https://github.com/LucDorpmans/$MyRepo/archive/refs/heads/main.zip" -OutFile "$env:USERPROFILE\Downloads\$MyRepo.zip"
 Expand-Archive "$env:USERPROFILE\Downloads\$MyRepo.zip" -DestinationPath E:\ -Force
 
-# Rename "E:\My-AZ-040-Repo-main" "MyFiles"
 # Get-MyScript "PowerShell-Core-7-Download+Install.ps1" 
 # Get-MyScript "Edge-HideFirstRunExperience.ps1" -EditFile
 # Get-MyScript "WinX-CmdNotPowerShell.ps1" -EditFile

@@ -1,6 +1,7 @@
 ﻿Get-SmbShare MyAllFiles | Remove-SmbShare -Confirm:$false
 Get-SmbShare MyLabFiles | Remove-SmbShare -Confirm:$false
 
-New-SmbShare -Name MyFiles -Path E:\MyFiles
-New-SmbShare -Name MyAllFiles -Path E:\MyFiles\My-AZ-040-AllFiles
-New-SmbShare -Name MyLabFiles -Path E:\MyFiles\My-AZ-040-LabFiles
+$MyRepo = "My-AZ-040-Repo-main"
+New-SmbShare -Name MyRepo -Path "E:\$MyRepo" -FullAccess "Adatum\Administrator"
+New-SmbShare -Name MyAllFiles -Path "E:\$MyRepo\My-AZ-040-AllFiles" -FullAccess "Adatum\Administrator"
+New-SmbShare -Name MyLabFiles -Path "E:\$MyRepo\My-AZ-040-LabFiles" -FullAccess "Adatum\Administrator"

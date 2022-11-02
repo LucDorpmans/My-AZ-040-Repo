@@ -1,7 +1,7 @@
 ﻿Get-SmbMapping | Remove-SmbMapping -Force
 
 $MyRepo = "My-AZ-040-Repo-main"
-$VolE = Get-Volume -DriveLetter "E"
+$VolE = Get-Volume -DriveLetter "E" -EA SilentlyContinue
 If (!($Vole.DriveType -eq "Fixed")) { New-SmbMapping -LocalPath E: -RemotePath \\LON-DC1\MyRepo\LabFiles.org\LON-CL1 }
 New-SmbMapping -LocalPath F: -RemotePath \\LON-DC1\MyRepo\My-AZ-040-AllFiles
 New-SmbMapping -LocalPath G: -RemotePath \\LON-DC1\MyRepo\My-AZ-040-LabFiles

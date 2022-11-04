@@ -10,11 +10,11 @@ $cred | Format-List
 
 $cred = Get-Credential "ADATUM\Administrator"
 # "Safely" store password in file
-$cred | Export-Clixml -Path F:\Mod09\Democode\cred.xml 
+$cred | Export-Clixml -Path F:\Mod07\cred.xml 
 
 
 # Decrypt Powershell SecureString Password
-$StoredCred = Import-Clixml F:\Mod09\Democode\cred.xml
+$StoredCred = Import-Clixml F:\Mod07\cred.xml
 $Storedcred.GetNetworkCredential() | Get-Member
 $Storedcred.GetNetworkCredential().password
 # Start-process https://devblogs.microsoft.com/scripting/decrypt-powershell-secure-string-password/

@@ -3,7 +3,7 @@
 
 #Demonstration steps:
 # Open a Windows PowerShell prompt.
-Set-Location F:\Mod09\
+Set-Location F:\Mod07\
 
 # To copy and rename a script file, at the Windows PowerShell prompt, type the following command, and then press Enter:
 Copy-Item .\"6-1 - Creating a Function in a Script.ps1" .\FolderFunctions.psm1

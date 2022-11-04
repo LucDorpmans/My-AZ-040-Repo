@@ -18,7 +18,7 @@ Invoke-Command -ScriptBlock { Get-SMBShare } -ComputerName LON-DC1,LON-SVR1 -AsJ
 
 # To start a Windows PowerShell remote job that retrieves all instances of the Win32_Volume class from every computer in Active Directory Domain Services (AD DS), enter the following commands, and then press the Enter key after each:
 Enable-PSRemoting -SkipNetworkProfileCheck -Force
-Invoke-Command -ScriptBlock { Get-CimInstance -ClassName Win32_Volume } -ComputerName (Get-ADComputer -Filter * | Select -Expand Name) -AsJob -JobName RemoteDisks
+Invoke-Command -ScriptBlock { Get-CimInstance -ClassName Win32_Volume } -ComputerName (Get-ADComputer -Filter * | Select-Object -Expand Name) -AsJob -JobName RemoteDisks
 # Note: You need to enable PowerShell Remoting on LON-CL1 in order to connect to it by using PowerShell Remoting, which is, by default, disabled on Windows 10. The RemoteDisk targets all domain computers, including LON-CL1.
 # Note: Because some of the computers in the domain might not be online, this job might not complete successfully. This is expected behavior.
 
@@ -28,7 +28,7 @@ Invoke-Command -ScriptBlock { Get-CimInstance -ClassName Win32_Volume } -Compute
 Start-Job -ScriptBlock { Get-EventLog -LogName Security } -Name LocalSecurity
 
 # To start a local job that produces 100 directory listings:
-Start-Job -ScriptBlock { 1..100 | ForEach-Object { Dir C:\ -Recurse } } -Name LocalDir
+Start-Job -ScriptBlock { 1..100 | ForEach-Object { Get-ChildItem C:\ -Recurse } } -Name LocalDir
 # Note: This job will take a long time to complete. Don't wait for it to complete. Proceed to the next task.
 
 ###
@@ -77,7 +77,7 @@ Register-ScheduledJob -ScheduledJobOption $option `
 	-Name LocalSecurityLog
 
 # To display a list of job triggers:
-Get-ScheduledJob -Name LocalSecurityLog | Select -Expand JobTriggers 
+Get-ScheduledJob -Name LocalSecurityLog | Select-Object -Expand JobTriggers 
 # Note the time that displays, and then wait until the time returned in the output of step 2 has passed.
 
 # To display a list of jobs:

@@ -18,7 +18,7 @@ $acl.SetAccessRuleProtection($true,$false)
 
 #Create a new rule that gives Administrators Full Control
 #Permissions are inherited by files and subfolders
-$rule = New-Object System.Security.AccessControl.FileSystemAccessRule(“Administrators”,”FullControl”, “ContainerInherit, ObjectInherit”, “None”, “Allow”)
+$rule = New-Object System.Security.AccessControl.FileSystemAccessRule("Administrators","FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
 
 #Add the rule to the ACL
 $acl.AddAccessRule($rule)
@@ -27,4 +27,4 @@ $acl.AddAccessRule($rule)
 Set-ACL C:\Test -AclObject $acl
 
 #Verify that permissions were modified
-Get-Acl C:\test | fl
+Get-Acl C:\test | Format-List

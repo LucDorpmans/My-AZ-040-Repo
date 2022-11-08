@@ -1,5 +1,5 @@
-﻿Get-SmbShare MyAllFiles | Remove-SmbShare -Confirm:$false
-Get-SmbShare MyLabFiles | Remove-SmbShare -Confirm:$false
+﻿Get-SmbShare MyAllFiles -ErrorAction SilentlyContinue | Remove-SmbShare -Confirm:$false 
+Get-SmbShare MyLabFiles -ErrorAction SilentlyContinue | Remove-SmbShare -Confirm:$false
 
 $MyRepo = "My-AZ-040-Repo-main"
 New-SmbShare -Name MyRepo -Path "E:\$MyRepo" -FullAccess "Adatum\Administrator"

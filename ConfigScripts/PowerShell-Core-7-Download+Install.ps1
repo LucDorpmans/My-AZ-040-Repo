@@ -1,5 +1,5 @@
 $progressPreference='SilentlyContinue'
-$PSCVer = "7.2.7"
+$PSCVer = "7.3.0"
 $MyFile = "PowerShell-$PSCVer-win-x64.msi"
 Invoke-Webrequest -Uri "https://github.com/PowerShell/PowerShell/releases/download/v$PSCVer/PowerShell-$PSCVer-win-x64.msi"  -Outfile "$env:USERPROFILE\Downloads\$MyFile"
 Get-ChildItem "$env:USERPROFILE\Downloads\$MyFile"
